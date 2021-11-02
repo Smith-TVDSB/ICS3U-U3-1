@@ -9,23 +9,46 @@
 
 //TESTS
 
-TEST_CASE("ExerciseOne") //Named ExerciseOne, tagged with example
+TEST_CASE("Exercise One") //Named ExerciseOne, tagged with example
 {
-    
-    //TODO: Set up tests
-    REQUIRE(replace(function()==Approx(5)); //within 1 of 5
-    REQUIRE(replace(function()==Approx(3).margin(5)); //within 5 units of 3
-    
-    //Checks keeps running if fails
-    CHECK(function()==0)
-
-    //Checks if a function throws an exception
-    REQUIRE_THROWS_WITH( openThePodBayDoors(), Contains( "afraid" ) && Contains( "can't do that" ) );
-        
+    CHECK (exerciseOne("Spy",3)=="SpySpySpy");
+    CHECK (exerciseOne("Hello World ",7)=="Hello World Hello World Hello World Hello World Hello World Hello World Hello World ");
+    CHECK (exerciseOne("Smith",2)=="SmithSmith");
+    CHECK (exerciseOne("2",9)=="222222222");
+    CHECK (exerciseOne("Pika",-7)=="");
+    CHECK (exerciseOne("blarg",0)=="");    
 }
 
+TEST_CASE("Exercise Two")
+{
+    CHECK(exerciseTwo(7)=="01234567");
+    CHECK(exerciseTwo(15)=="0123456789101112131415");
+    CHECK(exerciseTwo(0)=="0");
+    CHECK(exerciseTwo(-8)=="");
+}
+
+TEST_CASE("Exercise Three")
+{
+    CHECK(exerciseThree(8)=="876543210");
+    CHECK(exerciseThree(3)=="3210");
+    CHECK(exerciseThree(15)=="1514131211109876543210")
+    CHECK(exerciseThree(0)=="0");
+    CHECK(exerciseThree(-8)=="");
+}
+
+TEST_CASE("Exercise Four")
+{
+    CHECK(exerciseFour(5)==120);
+    CHECK(exerciseFour(1)==1);
+    CHECK(exerciseFour(12)==479001600);
+    CHECK(exerciseFour(3)==6)
+    CHECK(exerciseFour(1)==1);
+    CHECK(exerciseFour(0)==1);
+    CHECK(exerciseFour(4)==24);
+    CHECK(exerciseFour(11)==39916800);
+}
 // Notes for teacher: 
-// can use variables and libraries
+// can use variables and libraries, students may not see the test case though in results.
 // can use logic operators and loops
 // you can run a specific test by using ./tests <TEST CASE NAME HERE>
 
