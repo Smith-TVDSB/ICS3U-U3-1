@@ -31,7 +31,7 @@ TEST_CASE("Exercise Three")
 {
     CHECK(exerciseThree(8)=="876543210");
     CHECK(exerciseThree(3)=="3210");
-    CHECK(exerciseThree(15)=="1514131211109876543210")
+    CHECK(exerciseThree(15)=="1514131211109876543210");
     CHECK(exerciseThree(0)=="0");
     CHECK(exerciseThree(-8)=="");
 }
@@ -41,7 +41,7 @@ TEST_CASE("Exercise Four")
     CHECK(exerciseFour(5)==120);
     CHECK(exerciseFour(1)==1);
     CHECK(exerciseFour(12)==479001600);
-    CHECK(exerciseFour(3)==6)
+    CHECK(exerciseFour(3)==6);
     CHECK(exerciseFour(1)==1);
     CHECK(exerciseFour(0)==1);
     CHECK(exerciseFour(4)==24);
