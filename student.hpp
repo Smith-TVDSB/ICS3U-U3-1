@@ -7,7 +7,7 @@ using namespace std;
 // ===============
 // implementations
 
-string exerciseOne (/*you need a word and then a number in here*/)
+string exerciseOne (string word, int number)
 {
 	return "0";//TODO: Fix this
 }
